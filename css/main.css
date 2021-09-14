@@ -28,7 +28,7 @@ body{
 }
 
 nav{
-    background: #f9f9f9;;
+    background: #f9f9f9;
     height: 80px;
     width:100%;
 }
@@ -41,6 +41,7 @@ label.logo{
     font-weight: bold;
     text-transform: uppercase;
     max-width: 70px;
+    
 
 }
 
