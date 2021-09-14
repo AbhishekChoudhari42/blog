@@ -35,12 +35,12 @@ nav{
 
 label.logo{
     color:#1a1a1a;
-    font-size:1.5rem;
+    font-size:2rem;
     line-height: 80px;
     padding: 0 10px;
-    font-weight: bold;
+    font-weight:bold;
     text-transform: uppercase;
-    max-width: 70px;
+    max-width:70px;
 
 
 }
