@@ -14,9 +14,60 @@
 
 /* =========================================================================================================== */
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
 
+}
 
 /* navbar */
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(163, 108, 108);
+    font-family: 'Lato', sans-serif;
+
+}
+
+.logo{
+    color:rgb(32, 27, 27);
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    width: 30px;
+    height:35px;
+}
+
+.navbar-link{
+    color: rgb(32, 27, 27);
+    display:flex;
+    justify-content:space-around;
+    font-weight: bold;
+    width:30%;
+}
+
+.navbar-link li{
+    list-style: none;
+}
+.navbar-link a{
+    color: rgb(53, 32, 32);
+    text-decoration:none ;
+    letter-spacing:2px;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.drop div{
+    width: 25px;
+    height: 5px;
+   background-color:rgb(207, 191, 191);
+    margin:5px;
+}
 /* container */
 /* footer */
 
