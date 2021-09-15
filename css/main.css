@@ -292,7 +292,7 @@ a:hover{
 }
 /* =========== card =========== */
 .card{
-    width: 330px;
+    width: 350px;
     min-height: fit-content;
     height: max-content;
    margin-bottom: 20px;
