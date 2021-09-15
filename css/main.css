@@ -13,10 +13,6 @@
 
 
 /* =========================================================================================================== */
-body{
-    overflow-x: none;
-    font-family: 'Lato',sans-serif;
-}
 
 
 :root{
@@ -25,6 +21,12 @@ body{
     --light2:white;
     --shadow:rgba(0, 0, 0, 0.041);
 }
+body{
+    overflow-x: none;
+    font-family: 'Lato',sans-serif;
+    background: var(--light);
+}
+
 body.add-dark{
     --dark:#f1f1f1;
 
@@ -67,7 +69,7 @@ h1{
 
 }
 h1 span{
-    color: rgb(59, 59, 255);
+    color: rgb(98, 98, 255);
 }
 
 .nav-btns{
