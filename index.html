@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
     <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- stylesheets -->
+
+
     <link rel="stylesheet" href="/css/main.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.js">
     </script>
     <script>
+
     $(document).ready(function(){
-       $('#icon').click(function(){
+       $('.menu').click(function(){
          $('ul').toggleClass('show');
+        
        });
     });   
     </script>
@@ -28,7 +35,11 @@
     </div>
     <!-- navigation bar -->
     <nav>
-        <h1 class="logo">Logo</h1>
+        <h1 class="logo">alter<span>kode</span> </h1>
+
+        <div class="nav-btns">
+
+        
         <ul>
             <li class="bar"><a href="#">HOME</a></li>
             <li><a href="#">CONTACT-US</a></li>
@@ -36,9 +47,24 @@
             <li><a href="#">DMCA</a></li>
             <li><a href="#">PRIVACY-POLICY</a></li>
         </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
+        <div class="dark-mode">
+
+            <div class="sun">
+                <div class="dark-overlay">
+
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <span class="m1"></span>
+            <span class="m2"></span>
+            <span class="m3"></span>
+              
+         </div>
+
+        </div>
+
+     
     </nav>
 
 
