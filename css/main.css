@@ -3,10 +3,11 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.151);
+    font-size: .5rem;
+    background-color: rgba(0, 0, 0, 0.39);
     color: white;
-    padding: 1rem;
+    padding: .5rem;
+    z-index: 4000;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
