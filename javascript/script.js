@@ -1,3 +1,23 @@
+
+
+// preloader
+
+paceOptions = {
+    ajax:true,
+    document:true,
+    eventLag:false
+}
+Pace.on('done',function(){
+    document.querySelector('.preloader').classList.add('donee')
+    document.querySelector('.pace').style.display = 'none';
+})
+
+
+
+
+
+
+
 var darkMode = document.querySelector('.dark-mode')
 var sun = document.querySelector('.dark-overlay')
 var b = document.querySelector('body')
