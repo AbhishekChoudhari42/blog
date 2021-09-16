@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+
+body{
+    min-height:100vh;
+    background: var(--light);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    color: var(--dark);
+    max-width:500px;
+    line-height:65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info i{
+    margin-right:20px;
+    font-size:25px;
+
+}
+
+.contact-form{
+    max-width:500px;
+    margin-right:50px;
+}
+
+
+
