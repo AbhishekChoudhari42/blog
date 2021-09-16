@@ -56,14 +56,14 @@ const canvasWidth = window.innerWidth;
 let points = []
 
 let angle = 0.1
-let m = 0.005
+let m = 0.05
 
 function setup(){
    
     createCanvas(canvasWidth,canvasHeight);
     angleMode(DEGREES)
     noiseDetail(1)
-    var density = 80
+    var density = 64
     pixelDensity(1)
 
     var space = canvasWidth/density
