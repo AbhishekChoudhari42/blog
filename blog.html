@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
     <div class="blog-container">
         <div class="blog-content">
             <h1>Creating Generative Art with P5.js</h1>
+            <iframe id="ifr" src="./blog-assets\flow.html" frameborder="0"></iframe>
+            <h3 class="btn">Reload Example</h3> 
 
             <div class="blog-image">
                 <img src="./assets/photo2.png" alt="">
@@ -33,5 +36,15 @@
             </div>
         </div>
     </div>
+
+<script>
+    let btn = document.querySelector('.btn')
+    btn.addEventListener('click',function(){
+        var ifr = document.getElementById('ifr')
+        ifr.src = ifr.src
+    })
+   
+</script>
+
 </body>
 </html>
