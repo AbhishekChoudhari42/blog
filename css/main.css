@@ -377,15 +377,67 @@ a:hover{
 
 
 /* footer */
-footer{
+
+.contain{
+    width:100%;
+    background:#1a1a1a;
+    margin:auto;
+    padding: 50px 0;
+    
+}
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+.footer{
     display: block;
     width: 100%;
     height: 50vh;
-    background-color: #111;
-    color: white;
-    text-align: center;
+    background:#f1f1f1;
     margin: auto;
+    padding:70px 0;
 }
+
+h2{
+    font-size: 1.5rem;
+    color:#f1f1f1;
+    font-style: italic;
+    font-weight: 900;
+    
+   
+
+
+}
+h2 span{
+    color: rgb(98, 98, 255);
+}
+
+ul li a{
+    color:grey;
+    font-size:0.9rem;
+    font-weight: 500;
+    text-transform:uppercase;
+    padding: 6px 8px;
+    border-bottom:2px solid transparent;
+    line-height:20px;
+
+   
+}
+
+.foot{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        
+    }
+
+li a:hover{
+        border-bottom:2px solid wheat;
+        transition: .5s;
+    }
+
 /* blog-section */
 .transition-fade{
     transition: .6s;
