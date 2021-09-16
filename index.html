@@ -6,29 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script>
     <!--font-->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- stylesheets -->
+
+
     <link rel="stylesheet" href="/css/main.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/css/preloader.css">
+
+<!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js">
     </script>
     <script>
+
     $(document).ready(function(){
-       $('#icon').click(function(){
+       $('.menu').click(function(){
          $('ul').toggleClass('show');
+        
        });
     });   
     </script>
 </head>
 
 <body>
+    <div class="preloader">
+     
+
+    </div>
     <div class="message">
         This Website is currently under development
     </div>
     <!-- navigation bar -->
     <nav>
+<<<<<<< HEAD
         <h1>Logo</h1>
+=======
+        <h1 class="logo">alter<span>kode</span> </h1>
+
+        <div class="nav-btns">
+
+        
+>>>>>>> 4764151d8a092fd42534346e634f0a2e4e7fcd53
         <ul>
             <li class="bar"><a href="#">HOME</a></li>
             <li><a href="#">CONTACT-US</a></li>
@@ -36,9 +57,24 @@
             <li><a href="#">DMCA</a></li>
             <li><a href="#">PRIVACY-POLICY</a></li>
         </ul>
-        <label id="icon">
-            <i class="fas fa-bars"></i>
-        </label>
+        <div class="dark-mode">
+
+            <div class="sun">
+                <div class="dark-overlay">
+
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <span class="m1"></span>
+            <span class="m2"></span>
+            <span class="m3"></span>
+              
+         </div>
+
+        </div>
+
+     
     </nav>
 
 
@@ -46,13 +82,127 @@
 
     <div class="container">
 
+       
         <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo9.png">
+            </div>
+            <div class="content-container">
 
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
         </div>
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo2.png">
+            </div>
+            <div class="content-container">
+
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo3.png">
+            </div>
+            <div class="content-container">
+
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo6.png">
+            </div>
+            <div class="content-container">
+
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo.jpg">
+            </div>
+            <div class="content-container">
+
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="img-container">
+                <img src="/assets/photo.jpg">
+            </div>
+            <div class="content-container">
+
+                <h1>Technical blogger</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt quam quos perspiciatis error minus consectetur natus modi voluptas ratione. </p>
+
+                <div class="blog-info">
+                    <h5>Date: 11/22/3333</h5>
+                    <h5>Author: Name Surname</h5> 
+                </div>
+
+                  
+                    <a href="#">Read More</a>
+            </div>
+        </div>
+      
+
+      
     </div>
 
     <!-- footer -->
-
+    <footer> footer </footer>
     <!-- javascript -->
     <script src="/javascript/script.js"></script>
 
