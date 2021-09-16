@@ -30,3 +30,17 @@ body{
     padding-left: 50px;
     font-size: 18px;
 }
+
+.contact-info i{
+    margin-right:20px;
+    font-size:25px;
+
+}
+
+.contact-form{
+    max-width:500px;
+    margin-right:50px;
+}
+
+
+
