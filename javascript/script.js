@@ -24,7 +24,7 @@ var b = document.querySelector('body')
 darkMode.addEventListener('click',function(){
     sun.classList.toggle('open')
     b.classList.toggle('add-dark')
-    console.log('clikk')
+   
 })
 var menu = document.querySelector('.menu');
 
