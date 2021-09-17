@@ -23,9 +23,11 @@
     --shadow:rgba(0, 0, 0, 0.041);
 }
 body{
+   
     overflow-x: none;
     font-family: 'Lato',sans-serif;
     background: var(--light);
+
 }
 
 body.add-dark{
@@ -41,6 +43,8 @@ body.add-dark{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    max-width: 1400px;
+
 }
 
 
