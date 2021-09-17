@@ -17,6 +17,7 @@
 
 html{
     padding: 0;
+    scroll-behavior: smooth;
 }
 :root{
     --dark:#1a1a1a;
@@ -396,12 +397,10 @@ a:hover{
 }
 
 .footer{
-    display: block;
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     background:#f1f1f1;
-    margin: auto;
-    padding:70px 0;
+    margin: 0;
 }
 
 h2{
@@ -409,12 +408,13 @@ h2{
     color:#f1f1f1;
     font-style: italic;
     font-weight: 900;
-    padding: 0 15px;
+    padding: 0 18px;
+
 }
 
-.logo{
-    padding-bottom: 1.5rem;
-    border-bottom: 2px;
+.logo-bottom{
+    padding-bottom:2rem;
+    border-bottom: 2px solid #8a8a8a;
 }
 h2 span{
     color: rgb(98, 98, 255);
@@ -431,15 +431,16 @@ ul li a{
    
 }
 
-hr{
-      border-bottom: 2px;
-      padding-bottom: 1.5rem;
-}
+/* hr{
+    border-bottom: 2px;
+    padding-bottom: 1.5rem;
+} */
 .foot{
         display: flex;
         justify-content: space-around;
         align-items: center;
         position: relative;
+        padding-top: 2rem;
         
     }
 
@@ -447,8 +448,35 @@ li a:hover{
         border-bottom:2px solid wheat;
         transition: .5s;
     }
+.icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding: 0 1rem;
+    background-color: violet;
+}
+.social-icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 100%;
+    /* padding: 3 rem; */
 
-
+}
+.social-icons a{
+    padding: 0.3rem;
+  
+    width: fit-content;
+}😢
+.scroll-to-top li a{
+    color: white;
+    cursor: pointer;
+}
 
 
 /* blog-section */
