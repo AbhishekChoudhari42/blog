@@ -15,7 +15,9 @@
 
 /* =========================================================================================================== */
 
-
+html{
+    padding: 0;
+}
 :root{
     --dark:#1a1a1a;
     --light:#f9f9f9;
@@ -23,9 +25,11 @@
     --shadow:rgba(0, 0, 0, 0.041);
 }
 body{
+   
     overflow-x: none;
     font-family: 'Lato',sans-serif;
     background: var(--light);
+
 }
 
 body.add-dark{
@@ -41,6 +45,9 @@ body.add-dark{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    max-width: 1300px;
+    overflow-x: none;
+
 }
 
 
@@ -279,8 +286,9 @@ a:hover{
 /* container */
 .container{
     position: relative;
-    width: 100vw;
-    padding: 80px 1rem;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 0;
    
  
 
@@ -440,12 +448,15 @@ li a:hover{
         transition: .5s;
     }
 
+
+
+
 /* blog-section */
-.transition-fade{
+/* .transition-fade{
     transition: .6s;
     opacity: 1;
 }
 
 html.is-animating .transition-fade{
     opacity: 0;
-}
+} */
