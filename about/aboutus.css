@@ -10,6 +10,7 @@
     --light:#f9f9f9;
     --light2:white;
     --shadow:rgba(0, 0, 0, 0.041);
+    --link:  rgb(40, 40, 255);
 }
 body{
     min-height: 100vh;
@@ -22,6 +23,7 @@ body.add-dark{
     --dark:#f1f1f1;
     --light:#1a1a1a;
     --light2:black;
+    --link: rgb(185, 185, 255);
 }
 .about-section{
   display: flex;
@@ -79,7 +81,7 @@ p{
 
 p span{
     opacity: 1.5;
-    color: rgb(40, 40, 255);
+   
 
     font-weight: 500;
    
