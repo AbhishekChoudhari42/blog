@@ -31,6 +31,7 @@ if(window.localStorage.getItem('dark')){
 }
 
 
+
 if(darkValue){
 
         sun.classList.add('open')
@@ -38,6 +39,7 @@ if(darkValue){
 }else{
     sun.classList.remove('open')
     b.classList.remove('add-dark')
+
 }
 
 
