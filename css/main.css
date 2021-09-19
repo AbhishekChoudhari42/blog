@@ -503,6 +503,8 @@ font-size:1.5rem;
 }
 .social-icons li a{
     width: fit-content;
+    text-decoration: none;
+    color: white;
    
 
 }
