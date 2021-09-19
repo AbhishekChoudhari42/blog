@@ -1,0 +1,16 @@
+@media (min-width:700px){
+    .content-container h1{
+
+        font-size: 1.5rem;
+        color: var(--dark);
+       
+        font-weight: 900;
+        margin-bottom: 10px;
+        }
+        p{
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            opacity: 0.6;
+        }
+    
+}

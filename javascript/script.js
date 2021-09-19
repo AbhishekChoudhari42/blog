@@ -26,7 +26,7 @@ var b = document.querySelector('body')
 let darkValue = 0
 if(window.localStorage.getItem('dark')){
     darkValue = parseInt(window.localStorage.getItem('dark'))
-    console.log(darkValue)
+   
 
 }
 

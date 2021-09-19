@@ -42,22 +42,32 @@ body.add-dark{
  h1,h3,h4{
     margin: 10px 0;
 }
-h3{
-    font-size: 0.6rem;
-    color:var(--dark);
-}
+
 h1{
 font-weight: 800;
 font-size: 2.5rem;
 }
 h3{
     font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    color: var(--dark);
-
+    font-size: 2rem;
 }
-.h4{
+.blog-text h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    opacity: 0.8;
+    color: var(--dark);
+   
+   
+}
+@media (min-width:700px) {
+  .blog-text{
+font-size: 1rem;
+    }
+}
+
+
+h4{
     color: var(--dark);
 
 }
@@ -90,7 +100,7 @@ iframe{
 }
  .btn{
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
     background: rgb(14, 14, 14);
     color: rgb(255, 255, 255);

@@ -327,14 +327,14 @@ a:hover{
         justify-content: space-between;
         align-items: center;
         margin: 10px 0;
-        opacity: 0.8;
    
     color: var(--dark);
 
         
     }
     .blog-info h5{
-        font-weight: 600;
+        font-weight: 400;
+        
     }
 
     .content-container h1{
