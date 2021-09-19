@@ -53,16 +53,17 @@ h3{
 }
 .blog-text h3{
     font-weight: 400;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: 21px;
+    line-height: 32px;
     opacity: 0.8;
     color: var(--dark);
    
    
 }
-@media (min-width:700px) {
-  .blog-text{
-font-size: 1rem;
+@media (max-width:700px) {
+  .blog-text h3{
+font-size: 16px;
+line-height: 26px;
     }
 }
 
