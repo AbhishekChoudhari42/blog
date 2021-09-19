@@ -520,4 +520,5 @@ font-size:1.8rem;
 
 .icons li a:hover{
     color: rgb(98, 98, 255);
+    text-decoration: none;
 }
