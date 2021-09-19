@@ -29,7 +29,10 @@ darkMode.addEventListener('click',function(){
     window.localStorage.setItem('dark',JSON.stringify(toggle(darkValue)));
 
 
-    sun.classList.toggle('open')
+    if(sun){
+        sun.classList.add('open')
+
+    }
     b.classList.toggle('add-dark')
 
   
