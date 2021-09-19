@@ -515,3 +515,6 @@ font-size:1.8rem;
     border: none;
 }
 
+.icons li a:hover{
+    color: rgb(98, 98, 255);
+}
