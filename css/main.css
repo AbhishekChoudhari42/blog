@@ -267,6 +267,7 @@ a:hover{
          transition: .5s;
          background: var(--light);
          padding-top: 20vh;
+         
      }
    
      nav li{
