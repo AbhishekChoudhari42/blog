@@ -129,24 +129,24 @@ p span a{
 /* =============== animations =============== */
 
 h1{
-    animation:up 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation:up 1.5s cubic-bezier(0.175, 0.885, 0.32, 1) ;
 
 }
 h3{
-    animation:up 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation:up 0.5s cubic-bezier(0.175, 0.885, 0.32, 1) ;
 
 }
 p,h4{
-    animation:up 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    animation:up 1s cubic-bezier(0.175, 0.885, 0.32, 1) ;
 
 }
 @keyframes up {
     0%{
-        transform: translateY(50%);
+        transform: translateY(30%);
         opacity: 0;
     }
     100%{
         transform: translateY(0%);
-        /* opacity: 1; */
+        opacity: 1;
     }
 }
