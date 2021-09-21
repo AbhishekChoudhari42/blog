@@ -15,7 +15,10 @@
 
 /* =========================================================================================================== */
 
-
+html{
+    padding: 0;
+    scroll-behavior: smooth;
+}
 :root{
     --dark:#1a1a1a;
     --light:#f9f9f9;
@@ -23,9 +26,11 @@
     --shadow:rgba(0, 0, 0, 0.041);
 }
 body{
+   
     overflow-x: none;
     font-family: 'Lato',sans-serif;
     background: var(--light);
+
 }
 
 body.add-dark{
@@ -41,6 +46,9 @@ body.add-dark{
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    max-width: 1300px;
+    overflow-x: none;
+
 }
 
 
@@ -258,17 +266,25 @@ a:hover{
          text-align: center;
          transition: .5s;
          background: var(--light);
+         padding-top: 20vh;
+         
      }
    
      nav li{
          display: block;
-         margin: 50px 0;
+         margin: 40px 0;
          line-height: 30px;
+        
+         
      }
      nav a{
          font-size: 2rem;
+         
+         
  
      }
+
+
     
  
      nav ul.show{
@@ -279,8 +295,9 @@ a:hover{
 /* container */
 .container{
     position: relative;
-    width: 100vw;
-    padding: 80px 1rem;
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 0;
    
  
 
@@ -318,14 +335,14 @@ a:hover{
         justify-content: space-between;
         align-items: center;
         margin: 10px 0;
-        opacity: 0.8;
    
     color: var(--dark);
 
         
     }
     .blog-info h5{
-        font-weight: 600;
+        font-weight: 400;
+        
     }
 
     .content-container h1{
@@ -377,21 +394,139 @@ a:hover{
 
 
 /* footer */
-footer{
-    display: block;
+
+
+.footer{
     width: 100%;
-    height: 50vh;
-    background-color: #111;
-    color: white;
-    text-align: center;
-    margin: auto;
-}
-/* blog-section */
-.transition-fade{
-    transition: .6s;
-    opacity: 1;
+    height: 20vh;
+    margin: 0;
+    background:#000;
+    
+
 }
 
-html.is-animating .transition-fade{
-    opacity: 0;
+.contain{
+    width:100%;
+    background:#000;
+    margin:auto;
+    padding:30px 0;
+    height: 100%;
+    
+ 
+
+    
+}
+h2{
+    font-size: 1.5rem;
+    color:#f1f1f1;
+    font-style: italic;
+    font-weight: 900;
+    padding: 0 18px;
+
+}
+
+.logo-bottom{
+
+    border-bottom: 2px solid #494949;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+h2 span{
+    color: rgb(98, 98, 255);
+}
+
+ul li a{
+    color:grey;
+    font-size:0.9rem;
+    font-weight: 500;
+    text-transform:uppercase;
+    border-bottom:2px solid transparent;
+
+   
+}
+
+.foot{
+        display: flex;
+    
+        align-items: center;
+  
+        max-width:350px;
+ 
+        margin: 1rem 0;
+        padding: 0 0rem;
+        
+    }
+    .foot li{
+        padding: 0 1rem;
+    }
+    .foot li:nth-child(1){
+
+        border-right: 1px solid #4f4f4f;
+   
+    } 
+    .foot li:nth-child(2){
+        border-right: 1px solid #4f4f4f;
+
+    } 
+   
+
+li a:hover{
+        border-bottom:2px solid rgb(131, 131, 131);
+        transition: .5s;
+    }
+.icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background:#000;
+
+    border: none   ;
+    padding: 30px 1rem;
+    padding-bottom: 50px;
+
+
+  
+    
+}
+.social-icons{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+  
+    
+    /* color: rgb(255, 255, 255); */
+    width: 150px;
+    padding: 10px 0;
+    max-width:500px ;
+    height: 100%;
+    color: rgb(255, 255, 255);
+font-size:1.5rem;
+
+
+
+
+}
+.social-icons li a{
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+   
+
+}
+.scroll-to-top li a{
+    margin: 0  1rem;
+    
+    color: rgb(255, 255, 255);
+font-size:1.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+
+.icons li a:hover{
+    color: rgb(98, 98, 255);
+    text-decoration: none;
 }
