@@ -455,14 +455,14 @@ li a:hover{
     width: 100%;
     height: 30px;
     padding: 0 1rem;
-    background-color: violet;
+    background-color:#1a1a1a;
 }
 .social-icons{
     display: flex;
     justify-content:space-between;
     align-items: center;
     
-    color: rgb(255, 255, 255);
+    color: white;
     width: 40vw;
     height: 100%;
     /* padding: 3 rem; */
@@ -472,7 +472,7 @@ li a:hover{
     padding: 0.3rem;
   
     width: fit-content;
-}😢
+}
 .scroll-to-top li a{
     color: white;
     cursor: pointer;
