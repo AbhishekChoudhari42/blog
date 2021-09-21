@@ -11,80 +11,230 @@
 
 </head>
 <body>
-    <nav>
-        <h1 class="logo">alter<span>kode</span> </h1>
-
-        <div class="nav-btns">
-
-        
-        <ul>
-            <li class="bar"><a href="#">HOME</a></li>
-            <li><a href="#">CONTACT-US</a></li>
-            <li><a href="#">ABOUT-US</a></li>
-            <li><a href="#">DMCA</a></li>
-            <li><a href="#">PRIVACY-POLICY</a></li>
-        </ul>
-        <div class="dark-mode">
-
-            <div class="sun">
-                <div class="dark-overlay">
-
-                </div>
-            </div>
-        </div>
-        <div class="menu">
-            <span class="m1"></span>
-            <span class="m2"></span>
-            <span class="m3"></span>
-              
-         </div>
-
-        </div>
-
-     
-    </nav>
+   
 
     
     <div class="blog-container">
+
+
+
+
+<!-- content =========================================================================== -->
+
+
         <div class="blog-content">
-            <!--  -->
+            
+            
+            
+            <!-- Heading  -->
             <h1>Creating Generative Art with P5.js</h1>
-            <div id="ifr">
+           
+               
+           <div class="blog-image">
+            <img src="./blog-assets/flow.png" alt="">
+        </div>
+        <!-- =================================================================== -->
 
-                <iframe  src="./blog-assets/flow.html" frameborder="0"></iframe>
-             </div>
-            <h3 class="btn">Reload Example</h3> 
-
-            <!-- <div class="blog-image">
-                <img src="./assets/photo2.png" alt="">
-            </div> -->
+            
+           <!-- blog main text -->
             <div class="blog-text">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab ipsa corporis sit, sapiente fugiat et cumque adipisci tenetur reprehenderit unde possimus, necessitatibus aspernatur. Aliquam deleniti, itaque quidem ad incidunt voluptatem iure sed et? Obcaecati nihil numquam qui ea rem voluptas aperiam, fugit alias, similique, vero vel? Aut perferendis similique minima cumque libero, quaerat modi nesciunt, labore, consectetur dolorum laborum atque ad minus! Et eveniet rerum sapiente laboriosam eligendi odit non optio veritatis illum doloremque dolor alias numquam, sunt voluptatibus mollitia quasi totam, eius impedit sint, quidem itaque! Magni sed quas perferendis accusamus nobis, voluptate ex quae, dolor beatae repellat in id aspernatur illum doloremque aut deleniti fugiat ad. Numquam minus veritatis, quidem accusantium sapiente dolorum fugiat aut aliquid ut.</h3>
+                <div class="quote">
+                    <h3>“Creativity is the ability to introduce order into the randomness of nature” <br> – Eric Hoffer </h3> <br>
+                </div>
+            
+                
+                
+                
+                <h3>Well many of us think of creativity as something which is specifically associated with human being’s  and it may be true to a certain extent at least today it’s not the ability which a computer possesses , but even if computers cannot themselves create something, they can still be used as tools to create something beautiful and in this blog post I’ll try to explain to you a simple example of what that might look like. </h3>
+                <br>
+                <h3><span> So, what exactly is Generative Art?</span> <br>
+                    Generative Art is a form of art in which beautiful patterns, images, forms are made by using certain algorithms. And today we will be creating something which is called a flow field and then we will add some reflections to it to create a symmetrical pattern. We will be using the P5.js library which is a JavaScript library for making digital sketches.
+                    </h3>
+             
 
+                <!-- blog images -->
+               
+                <h3>So let’s get started. <br>
+                    Firstly we’ll have to include the CDN link of the P5.js library in our project.
+                    </h3>
+                    <div class="blog-image">
+                        <img src="./blog-assets/htmlb.png" alt="">
+                    </div>
+                    <h3>And that’s all we need to add in our html file. <br></h3>
+
+                <h3>Then you can add some styling to the html to center the canvas which we will be creating</h3>
                 
                 <div class="blog-image">
-                    <img src="./assets/photo2.png" alt="">
+                    <img src="./blog-assets/carbon (2).png" alt="">
                 </div>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab ipsa corporis sit, sapiente fugiat et cumque adipisci tenetur reprehenderit unde possimus, necessitatibus aspernatur. Aliquam deleniti, itaque quidem ad incidunt voluptatem iure sed et? Obcaecati nihil numquam qui ea rem voluptas aperiam, fugit alias, similique, vero vel? Aut perferendis similique minima cumque libero, quaerat modi nesciunt, labore, consectetur dolorum laborum atque ad minus! Et eveniet rerum sapiente laboriosam eligendi odit non optio veritatis illum doloremque dolor alias numquam, sunt voluptatibus mollitia quasi totam, eius impedit sint, quidem itaque! Magni sed quas perferendis accusamus nobis, voluptate ex quae, dolor beatae repellat in id aspernatur illum doloremque aut deleniti fugiat ad. Numquam minus veritatis, quidem accusantium sapiente dolorum fugiat aut aliquid ut.</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab ipsa corporis sit, sapiente fugiat et cumque adipisci tenetur reprehenderit unde possimus, necessitatibus aspernatur. Aliquam deleniti, itaque quidem ad incidunt voluptatem iure sed et? Obcaecati nihil numquam qui ea rem voluptas aperiam, fugit alias, similique, vero vel? Aut perferendis similique minima cumque libero, quaerat modi nesciunt, labore, consectetur dolorum laborum atque ad minus! Et eveniet rerum sapiente laboriosam eligendi odit non optio veritatis illum doloremque dolor alias numquam, sunt voluptatibus mollitia quasi totam, eius impedit sint, quidem itaque! Magni sed quas perferendis accusamus nobis, voluptate ex quae, dolor beatae repellat in id aspernatur illum doloremque aut deleniti fugiat ad. Numquam minus veritatis, quidem accusantium sapiente dolorum fugiat aut aliquid ut.</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab ipsa corporis sit, sapiente fugiat et cumque adipisci tenetur reprehenderit unde possimus, necessitatibus aspernatur. Aliquam deleniti, itaque quidem ad incidunt voluptatem iure sed et? Obcaecati nihil numquam qui ea rem voluptas aperiam, fugit alias, similique, vero vel? Aut perferendis similique minima cumque libero, quaerat modi nesciunt, labore, consectetur dolorum laborum atque ad minus! Et eveniet rerum sapiente laboriosam eligendi odit non optio veritatis illum doloremque dolor alias numquam, sunt voluptatibus mollitia quasi totam, eius impedit sint, quidem itaque! Magni sed quas perferendis accusamus nobis, voluptate ex quae, dolor beatae repellat in id aspernatur illum doloremque aut deleniti fugiat ad. Numquam minus veritatis, quidem accusantium sapiente dolorum fugiat aut aliquid ut.</h3>
-                <div class="blog-info">
-                    <h4>Date: 11/22/3333</h4>
-                    <h4>Author: Name Surname</h4>
-                </div>
+                
+                <br> <h3>Now we will start with JavaScript </h3>
+                <h3>
+                    We will begin by initializing the CanvasWidth and CanvasHeight variable. <br> 
+                    Then well declare the points array  and a variable called scale the value of scale can be adjusted according to your liking ( try taking different values and see the results)
+                </h3>
+               <div class="blog-image">
+                <img src="./blog-assets/js1.png" alt="">
             </div>
+<h3>In the setup function we will create a canvas with width equal to CanvasWidth and height equal to CanvasHeight 
+    </h3>
+
+    <br>
+    <h3>Background colour will be black,
+    Set the angle mode to degrees and noise detail to 1 and pixel density as 1 <br><br>
+                Initialize the variable density according to your preference but higher density may pose some performance issues and may lag so we will keep it at 64. <br><br>
+                The space variable  is just  the distance between the points <br> 
+            </h3>
+   
+             
+           
+            <div class="blog-image">
+                <img src="./blog-assets/jsSetup.png" alt="">
+            </div>
+            <h3>
+
+               
+               
+                
+                After this a nested for loop will be required to initialize the positions of all the points( it will look like a 2D matrix) <br><br>
+                <div class="blog-image">
+                    <img src="./blog-assets/initiate.png" alt="">
+                </div>
+                Just so that it does not remain uniform we will just add a bit of randomness to it using the random() function <br><br>
+                <div class="blog-image">
+                    <img src="./blog-assets/offset.png" alt="">
+                </div>
+               
+                This completes our setup, now we need update the positions of these points continuously using the draw function in order to give it a flow field like effect <br>
+
+
+               
+            </h3>
+
+
+            <!-- draww -->
+            <br>
+            <br>
+            <h3>The <span>draw( )</span> function runs continuously, updates at each frame</h3>
+
+           
+               
+
+            <h3>We will initialise varibale cw as CanvasWidth and ch as canvasHeight</h3>
+           <br>
+           <h3>
+               The <span>noStroke( ) </span> function removes the stroke from the ellipse which we will be drawing 
+           </h3>
+
+
+            <div class="blog-image">
+                <img src="./blog-assets/draw1.png" alt="">
+            </div>
+
+            <h3> 
+            We will run a for loop to draw all the points in the array 
+                
+            </h3>
+            <br>
+            <h3> 
+               The colour mapping is done according to the position of the points on the canvas 
+               
+                    
+                </h3>
+                <br>
+                <div class="blog-image">
+                    <img src="./blog-assets/map.png">
+                </div>
+                <div class="blog-image">
+                    <img src="./blog-assets/gradient.png">
+                </div>
+
+
+
+<br><h3>The <span>ellipse(x,y,radius)</span>  function is used to draw an ellipse in this case the radius is 1 </h3>
+
+            <div class="blog-image">
+                <img src="./blog-assets/draw2.png" alt="">
+            </div>
+
+
+
+
+
+<h3>And at last we get a flow field with fourfold symmetry</h3>
+
+<br>
+<h3>you can change the parameters and experiment with other things</h3>
+
+
+
+
+
+
+
+
+
+
+                <h3>codepen</h3>
+                <iframe height="300" style="width: 100%;" scrolling="no" title="Flow field with mirror symmetry" src="https://codepen.io/abhishekchoudhari42/embed/vYZdBdz?default-tab=result&theme-id=dark" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                    See the Pen <a href="https://codepen.io/abhishekchoudhari42/pen/vYZdBdz">
+                    Flow field with mirror symmetry</a> by Abhishek Choudhari (<a href="https://codepen.io/abhishekchoudhari42">@abhishekchoudhari42</a>)
+                    on <a href="https://codepen.io">CodePen</a>.
+                  </iframe>
+          
+               <!-- blog author and date info  -->
+                <div class="blog-info">
+                    <h4>11/22/3333</h4>
+                    <h4>Name Surname</h4>
+                </div>
+
+
+            
+            </div>
+            
+            
+            <div class="back-button">
+                <a href="./index.html">Back to Home Page</a>
+            </div>
+        
+        
         </div>
+
+        
     </div>
 
-<script>
-    let btn = document.querySelector('.btn')
-    btn.addEventListener('click',function(){
-        var ifr = document.querySelector('#ifr iframe')
-        ifr.src = ifr.src
-    })
-   
-</script>
 
+
+
+
+
+
+    <div class="overlay">
+        <div class="cc">
+            <input class="ccinput" placeholder="Password" type="text" name="" id="">
+            <button>ENTER</button>
+        </div>
+       
+    </div>
+<!-- ============================================ scripts =================================== -->
+
+<script src="./javascript/darkmode.js"></script>
+<script>
+    // no backend vro
+
+    let password = 'perlin'
+    let inp = document.querySelector('.ccinput')
+    let btnn = document.querySelector('.cc button')
+    let ovr = document.querySelector('.overlay')
+ 
+    btnn.addEventListener('click',function(){
+       if(inp.value === password){
+        ovr.style.top = '-150%'
+       }else{
+           alert('you have entered the wrong password')
+       }
+        
+    })
+</script>
 </body>
 </html>

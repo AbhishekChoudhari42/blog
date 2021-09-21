@@ -16,28 +16,10 @@
        display: grid;
        place-items: center;
        background-color: rgb(43, 43, 43);
-       font-family: 'montserrat';
-       font-weight: 800;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-   }
-   .p5Canvas{
   
-       background-color: black;
+   
    }
-   h1{
-       position: absolute;
-       font-size: 10rem;
-       color: white;
-       z-index: 100;
-       /* text-shadow: 2px 2px 10px black; */
-       backdrop-filter: blur(3px);
-       border-radius: 20px;
-       
-       padding: 1rem;
 
-   }
 </style>
 <body>
 
@@ -47,64 +29,82 @@
 
 
 <script>
-    const canvasHeight = window.innerHeight;
+
+const canvasHeight = window.innerHeight;
 const canvasWidth = window.innerWidth;
     
-
-
-
 let points = []
-
-let angle = 0.1
-let m = 0.05
+let scale = 0.05
 
 function setup(){
    
-    createCanvas(canvasWidth,canvasHeight);
-    angleMode(DEGREES)
-    noiseDetail(3)
-    var density = 64
-    pixelDensity(1)
+    createCanvas(canvasWidth,canvasHeight);// to create canvas
 
+    background(0,0,0) // background black
+    angleMode(DEGREES) // angle mode in degree
+
+    // to adjust the detail produced by noise  function
+    noiseDetail(1) 
+
+    pixelDensity(1) // to set pixel density
+ 
+    // no of points
+    var density = 64 
+    // distance between each point
     var space = canvasWidth/density
 
-    for(let x = 0;x<canvasWidth/2;x+=space){
-        for(let y = 0;y<canvasHeight/2;y+=space){
-            var p = createVector(x + random(-50,50),y+ random(-50,50));
-            points.push(p)
+    for(let x = 0 ; x < canvasWidth / 2 ; x += space){
+
+        for(let y = 0 ; y < canvasHeight / 2 ; y += space){
+
+            // initialising p with a random offset
+            // value between  50 & -50
+            
+            var p = createVector(x + random(-50,50) , y + random(-50,50));
+
+            points.push(p) // to add p in points array
         }
     }
-
-background(0,0,0)
- 
-   
-   
-   
-   
 }
+
+let cw = canvasWidth
+let ch = canvasHeight
+
+
 function draw(){
     noStroke()
-
 
     for(let i = 0;i<points.length;i++){
    
 
-        
+        // mapping colours to points according to their position
         let r = map(points[i].x,0,canvasWidth/2,0,255)
         let b = map(points[i].y,0,canvasHeight/2,0,255)
         let g = map(points[i].x,canvasWidth/2,0,0,255)
+
         fill(r,g,b)
+        // for initializing the direction of vector which will 
+        // be added to the initial position of points 
+        var a = map(noise(points[i].x * scale,points[i].y * scale),0,1,0,360)
 
-        var a = map(noise(points[i].x*m,points[i].y*m),0,1,0,720)
-        points[i].add(createVector(cos(a),sin(a)))
+        points[i].add(createVector(cos(a),sin(a))) //adding a vector to the points
 
-        ellipse(points[i].x,points[i].y,1)
 
-        ellipse(map(points[i].x + canvasWidth/2,canvasWidth/2,canvasWidth,canvasWidth,canvasWidth/2),points[i].y,1)
-      
-        ellipse(points[i].x ,    map(points[i].y + canvasHeight/2,canvasHeight/2,canvasHeight,canvasHeight,canvasHeight/2)      ,1)
+        // for drawing the points
 
-        ellipse(map(points[i].x + canvasWidth/2,canvasWidth/2,canvasWidth,canvasWidth,canvasWidth/2),map(points[i].y + canvasHeight/2,canvasHeight/2,canvasHeight,canvasHeight,canvasHeight/2),1)
+        ellipse(points[i].x,points[i].y,1) // first 
+        // reflection on y axis
+
+        ellipse(map(points[i].x + cw/2 , cw/2 , cw , cw , cw/2) , points[i].y,1) // second
+       
+        // reflection on x axis 
+        
+        ellipse(points[i].x , map( points[i].y + ch/2 , ch/2 , ch , ch , ch/2) , 1) // third
+
+        // reflection on x axis and y axis
+
+        ellipse(map(points[i].x + cw/2 , cw/2 , cw , cw , cw/2),
+                map(points[i].y + ch/2 , ch/2 , ch , ch , ch/2),1) //fourth
        
      
     }
@@ -113,9 +113,7 @@ function draw(){
   
     }
    
-window.ondblclick = function(){
-    saveCanvas('image'+random()*100+'','png')
-}
+
 
     
     
