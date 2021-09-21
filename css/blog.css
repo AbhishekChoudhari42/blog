@@ -20,7 +20,8 @@
     align-items: center;
     z-index: 4000;
     transition: 1s;
-    transition-delay: 0.2s;
+    transition-delay: 0.2s
+    ;
 }
 .cc{
     width: 80vh;

@@ -29,40 +29,42 @@
 
 
 <script>
-    const canvasHeight = window.innerHeight;
+
+const canvasHeight = window.innerHeight;
 const canvasWidth = window.innerWidth;
     
-
-
-
 let points = []
-
-let angle = 0.1
-let m = 0.05
+let scale = 0.05
 
 function setup(){
    
-    createCanvas(canvasWidth,canvasHeight);
-    angleMode(DEGREES)
-    noiseDetail(3)
-    var density = 64
-    pixelDensity(1)
+    createCanvas(canvasWidth,canvasHeight);// to create canvas
 
+    background(0,0,0) // background black
+    angleMode(DEGREES) // angle mode in degree
+
+    // to adjust the detail produced by noise  function
+    noiseDetail(1) 
+
+    pixelDensity(1) // to set pixel density
+ 
+    // no of points
+    var density = 64 
+    // distance between each point
     var space = canvasWidth/density
 
-    for(let x = 0;x<canvasWidth/2;x+=space){
-        for(let y = 0;y<canvasHeight/2;y+=space){
-            var p = createVector(x + random(-50,50),y+ random(-50,50));
-            points.push(p)
+    for(let x = 0 ; x < canvasWidth / 2 ; x += space){
+
+        for(let y = 0 ; y < canvasHeight / 2 ; y += space){
+
+            // initialising p with a random offset
+            // value between  50 & -50
+            
+            var p = createVector(x + random(-50,50) , y + random(-50,50));
+
+            points.push(p) // to add p in points array
         }
     }
-
-background(0,0,0)
- 
-   
-   
-   
-   
 }
 
 let cw = canvasWidth
@@ -81,9 +83,9 @@ function draw(){
         let g = map(points[i].x,canvasWidth/2,0,0,255)
 
         fill(r,g,b)
-        // for initializing the magnitude of vector which will 
+        // for initializing the direction of vector which will 
         // be added to the initial position of points 
-        var a = map(noise(points[i].x * m,points[i].y * m),0,1,0,360)
+        var a = map(noise(points[i].x * scale,points[i].y * scale),0,1,0,360)
 
         points[i].add(createVector(cos(a),sin(a))) //adding a vector to the points
 
