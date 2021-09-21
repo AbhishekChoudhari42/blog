@@ -64,29 +64,45 @@ background(0,0,0)
    
    
 }
+
+let cw = canvasWidth
+let ch = canvasHeight
+
+
 function draw(){
     noStroke()
-
 
     for(let i = 0;i<points.length;i++){
    
 
-        
+        // mapping colours to points according to their position
         let r = map(points[i].x,0,canvasWidth/2,0,255)
         let b = map(points[i].y,0,canvasHeight/2,0,255)
         let g = map(points[i].x,canvasWidth/2,0,0,255)
+
         fill(r,g,b)
+        // for initializing the magnitude of vector which will 
+        // be added to the initial position of points 
+        var a = map(noise(points[i].x * m,points[i].y * m),0,1,0,360)
 
-        var a = map(noise(points[i].x*m,points[i].y*m),0,1,0,720)
-        points[i].add(createVector(cos(a),sin(a)))
+        points[i].add(createVector(cos(a),sin(a))) //adding a vector to the points
 
-        ellipse(points[i].x,points[i].y,1)
 
-        ellipse(map(points[i].x + canvasWidth/2,canvasWidth/2,canvasWidth,canvasWidth,canvasWidth/2),points[i].y,1)
-      
-        ellipse(points[i].x ,    map(points[i].y + canvasHeight/2,canvasHeight/2,canvasHeight,canvasHeight,canvasHeight/2)      ,1)
+        // for drawing the points
 
-        ellipse(map(points[i].x + canvasWidth/2,canvasWidth/2,canvasWidth,canvasWidth,canvasWidth/2),map(points[i].y + canvasHeight/2,canvasHeight/2,canvasHeight,canvasHeight,canvasHeight/2),1)
+        ellipse(points[i].x,points[i].y,1) // first 
+        // reflection on y axis
+
+        ellipse(map(points[i].x + cw/2 , cw/2 , cw , cw , cw/2) , points[i].y,1) // second
+       
+        // reflection on x axis 
+        
+        ellipse(points[i].x , map( points[i].y + ch/2 , ch/2 , ch , ch , ch/2) , 1) // third
+
+        // reflection on x axis and y axis
+
+        ellipse(map(points[i].x + cw/2 , cw/2 , cw , cw , cw/2),
+                map(points[i].y + ch/2 , ch/2 , ch , ch , ch/2),1) //fourth
        
      
     }
@@ -95,9 +111,7 @@ function draw(){
   
     }
    
-window.ondblclick = function(){
-    saveCanvas('image'+random()*100+'','png')
-}
+
 
     
     

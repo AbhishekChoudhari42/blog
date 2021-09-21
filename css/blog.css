@@ -6,6 +6,35 @@
     box-sizing: border-box;
 
 }
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4000;
+}
+.cc{
+    width: 80vh;
+    max-width: 300px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cc input,.cc button{
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+
 :root{
     --dark:#1a1a1a;
     --light:#f9f9f9;
@@ -42,23 +71,39 @@ body.add-dark{
  h1,h3,h4{
     margin: 10px 0;
 }
-
+q h3{
+    font-size: 1rem;
+  
+}
 h1{
 font-weight: 800;
 font-size: 2.5rem;
 }
+
 h3{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 2rem;
+    
 }
 .blog-text h3{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 21px;
-    line-height: 32px;
+    line-height: 36px;
     opacity: 0.8;
     color: var(--dark);
+    
    
    
+}
+.blog-text h3 span{
+    font-weight: 600;
+    font-style: 28px;
+}
+.quote h3{
+    font-style: 2rem;
+    color: var(--dark);
+    font-style: italic;
+    font-weight:400;
 }
 @media (max-width:700px) {
   .blog-text h3{
