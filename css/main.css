@@ -479,11 +479,9 @@ li a:hover{
     justify-content:space-between;
     align-items: center;
     width: 100%;
-<<<<<<< HEAD
     height: 30px;
     padding: 0 1rem;
     background-color:#1a1a1a;
-=======
     height: 40px;
     background:#000;
 
@@ -494,7 +492,6 @@ li a:hover{
 
   
     
->>>>>>> 232a313e8cf610e1b566aebbc0b522d978404495
 }
 .social-icons{
     display: flex;
@@ -503,15 +500,12 @@ li a:hover{
   
   
     
-<<<<<<< HEAD
     color: white;
     width: 40vw;
-=======
     /* color: rgb(255, 255, 255); */
     width: 150px;
     padding: 10px 0;
     max-width:500px ;
->>>>>>> 232a313e8cf610e1b566aebbc0b522d978404495
     height: 100%;
     color: rgb(255, 255, 255);
 font-size:1.5rem;
@@ -522,12 +516,9 @@ font-size:1.5rem;
 }
 .social-icons li a{
     width: fit-content;
-<<<<<<< HEAD
 }
 .scroll-to-top li a{
-=======
     text-decoration: none;
->>>>>>> 232a313e8cf610e1b566aebbc0b522d978404495
     color: white;
    
 
@@ -536,7 +527,7 @@ font-size:1.5rem;
     margin: 0  1rem;
     
     color: rgb(255, 255, 255);
-font-size:1.8rem;
+    font-size:1.8rem;
     cursor: pointer;
     text-decoration: none;
     border: none;
