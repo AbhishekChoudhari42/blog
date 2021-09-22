@@ -497,9 +497,6 @@ li a:hover{
     display: flex;
     justify-content:space-between;
     align-items: center;
-  
-  
-    
     color: white;
     width: 40vw;
     /* color: rgb(255, 255, 255); */
@@ -516,6 +513,7 @@ font-size:1.5rem;
 }
 .social-icons li a{
     width: fit-content;
+    color: #f1f1f1;
 }
 .scroll-to-top li a{
     text-decoration: none;
