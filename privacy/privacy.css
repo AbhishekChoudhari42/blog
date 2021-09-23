@@ -75,12 +75,12 @@ p span a{
     text-decoration: none;
     color: var(--link);
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1000px){
     .inner-container{
         padding: 80px;
     }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:800px){
     .about-section{
      
         padding:50px 20px;
@@ -89,7 +89,7 @@ p span a{
         width: 100%;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 600px){
     .about-section{
         padding: 32px;
     }
