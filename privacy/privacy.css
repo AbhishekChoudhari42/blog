@@ -89,7 +89,14 @@ p span a{
         width: 100%;
     }
 }
-
+@media screen and (max-width: 800px){
+    .about-section{
+        padding: 32px;
+    }
+    .inner-container{
+       padding: 0;
+    }
+}
 
 
 
