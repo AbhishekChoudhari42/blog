@@ -47,14 +47,14 @@
                 
                 <h3>Well many of us think of creativity as something which is specifically associated with human being’s  and it may be true to a certain extent at least today it’s not the ability which a computer possesses , but even if computers cannot themselves create something, they can still be used as tools to create something beautiful and in this blog post I’ll try to explain to you a simple example of what that might look like. </h3>
                 <br>
-                <h3><span> So, what exactly is Generative Art?</span> <br>
+                <h3><span> So, what exactly is Generative Art?</span> <br> <br>
                     Generative Art is a form of art in which beautiful patterns, images, forms are made by using certain algorithms. And today we will be creating something which is called a flow field and then we will add some reflections to it to create a symmetrical pattern. We will be using the P5.js library which is a JavaScript library for making digital sketches.
                     </h3>
              
 
                 <!-- blog images -->
                
-                <h3>So let’s get started. <br>
+                <h3>So let’s get started. <br> <br>
                     Firstly we’ll have to include the CDN link of the P5.js library in our project.
                     </h3>
                     <div class="blog-image">
@@ -166,6 +166,8 @@
 <br>
 <h3>you can change the parameters and experiment with other things</h3>
 
+<br>
+<br>
 
 
 
@@ -226,7 +228,7 @@
     let inp = document.querySelector('.ccinput')
     let btnn = document.querySelector('.cc button')
     let ovr = document.querySelector('.overlay')
- 
+    ovr.style.top = '-150%'
     btnn.addEventListener('click',function(){
        if(inp.value === password){
         ovr.style.top = '-150%'
