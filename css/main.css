@@ -479,6 +479,9 @@ li a:hover{
     justify-content:space-between;
     align-items: center;
     width: 100%;
+    height: 30px;
+    padding: 0 1rem;
+    background-color:#1a1a1a;
     height: 40px;
     background:#000;
 
@@ -494,9 +497,8 @@ li a:hover{
     display: flex;
     justify-content:space-between;
     align-items: center;
-  
-  
-    
+    color: white;
+    width: 40vw;
     /* color: rgb(255, 255, 255); */
     width: 150px;
     padding: 10px 0;
@@ -511,6 +513,9 @@ font-size:1.5rem;
 }
 .social-icons li a{
     width: fit-content;
+    color: #f1f1f1;
+}
+.scroll-to-top li a{
     text-decoration: none;
     color: white;
    
@@ -520,7 +525,7 @@ font-size:1.5rem;
     margin: 0  1rem;
     
     color: rgb(255, 255, 255);
-font-size:1.8rem;
+    font-size:1.8rem;
     cursor: pointer;
     text-decoration: none;
     border: none;

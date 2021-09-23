@@ -32,15 +32,11 @@ body.add-dark{
     width: 100%;
     background-color: var(--light);
     height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
 padding-bottom: 2rem;
 
 }
-
 .inner-container{
-    padding: 32px;
+   padding: 32px;
     width: 64%;
     min-height: fit-content;
     height: 100%;
